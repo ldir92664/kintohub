@@ -16,7 +16,7 @@
       "value": "/bluesky"
     }
   },
-  "website": "https://www.danxiaonuo.com/",
-  "repository": "https://github.com/danxiaonuo/v2ray-heroku",
+  "website": "https://starts.sh",
+  "repository": "https://github.com/yushufeng/kintohub",
   "stack": "container"
 }
