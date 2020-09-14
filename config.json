@@ -1,28 +1,63 @@
 {
-  "inbounds": [
-    {
-      "port": 443,
-      "protocol": "vmess",
-      "settings": {
-        "clients": [
-          {
-            "id": "783efa23-effa-4f67-a5f8-c7f15a78a152",
-            "alterId": 6
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "/bluesky"
+    "inbounds": [
+        {
+            "port": 8888,
+            "protocol": "vmess",
+            "settings": {
+                "clients": [
+                    {
+                        "id": "c95ef1d4-f3ac-4586-96e9-234a37dda068",
+                        "alterId": 6
+                    }
+                ]
+            },
+            "streamSettings": {
+                "network": "ws",
+                "wsSettings": {
+                    "path": "/bluesky"
+                }
+            }
         }
-      }
+    ],
+
+    "outbounds": [
+        {
+            "protocol": "freedom"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "blocked"
+        },
+        {
+            "protocol": "socks",
+            "tag": "sockstor",
+            "settings": {
+                "servers": [
+                    {
+                        "address": "127.0.0.1",
+                        "port": 9050
+                    }
+                ]
+            }
+        }
+    ],
+
+    "routing": {
+        "rules": [
+            {
+                "type": "field",
+                "outboundTag": "sockstor",
+                "domain": [
+                    "geosite:tor"
+                ]
+            },
+            {
+                "type": "field",
+                "outboundTag": "blocked",
+                "domain": [
+                    "geosite:category-ads-all"
+                ]
+            }
+        ]
     }
-  ],
-  "outbounds": [
-    {
-      "protocol": "freedom",
-      "settings": {}
-    }
-  ]
 }
