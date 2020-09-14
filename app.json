@@ -1,7 +1,7 @@
 {
   "name": "V2Ray",
   "description": "Deploy V2ray on kintohub.",
-  "keywords": [ "V2Ray" ],
+  "keywords": ["V2Ray"],
   "env": {
     "UUID": {
       "description": "V2Ray UUID",
