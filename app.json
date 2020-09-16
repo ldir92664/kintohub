@@ -5,10 +5,10 @@
   "env": {
     "UUID": {
       "description": "V2Ray UUID",
-      "value": "783efa23-effa-4f67-a5f8-c7f15a78a152"
+      "value": "c95ef1d4-f3ac-4586-96e9-234a37dda068"
     }
   },
   "website": "https://starts.sh",
-  "repository": "https://github.com/yushufeng/kintohub",
+  "repository": "https://github.com/ldir92664/kintohub",
   "stack": "container"
 }
