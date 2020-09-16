@@ -1,7 +1,7 @@
 v2ray
 
-Id:783efa23-effa-4f67-a5f8-c7f15a78a152
+Id:c95ef1d4-f3ac-4586-96e9-234a37dda069
 
-alterId:6
+alterId:64
 
-path:/bluesky
+path:/ldir
